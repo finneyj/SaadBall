@@ -20,7 +20,7 @@ jobs:
         java-version: '11'
 
     - name: Compile Java files
-      run: javac -d . '**/*.java'
+      run: javac *.java
       
     - name: Display compiled files
       run: find .
