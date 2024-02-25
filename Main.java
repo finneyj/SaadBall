@@ -8,6 +8,18 @@ public class Main
 
         while(true)
         {
+            if (arena.rightPressed()) {
+                s.move(5, 0);
+              }
+            if (arena.leftPressed()) {
+                s.move(-5, 0);
+              }
+            if (arena.upPressed()) {
+                s.move(0, -5);
+              }
+             if (arena.downPressed()) {
+                s.move(0, 5);
+              }
             arena.pause();
         }
     }
