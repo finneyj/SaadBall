@@ -27,7 +27,7 @@ jobs:
       
     - name: Archive source code
       run: |
-        zip -r source-code.zip src
+        zip -r source-code.zip *
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
