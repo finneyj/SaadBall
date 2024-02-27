@@ -24,3 +24,13 @@ jobs:
       
     - name: Display compiled files
       run: find .
+      
+    - name: Archive source code
+      run: |
+        zip -r source-code.zip src
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: source-code
+        path: source-code.zip
